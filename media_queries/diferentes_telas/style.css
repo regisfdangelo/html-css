@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/* ESTUDAR SOBRE TYPICAL DEVICE BREACKPOINTS
+PEQUENAS TELAS: ATÉ 600PX
+CELULAR: 600 A 768PX
+TABLETS: 768 A 992
+DESKTOP: 992 ATÉ 1200PX
+GRANDES TELAS: ACIMA DE 1200PX
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 96.3vh;    
+    background: url(imagens/back-phone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main{         
+    justify-items: center;   
+    width: 300px;
+    height: 400px; 
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+main h1{
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.486);   
+    text-align: center;
+}
+
+/* PARA IMPRESSÃO */
+@media print {
+    body{
+        background: none;
+    }
+    main #pc{display: none;}
+    main #tv{display: none;} 
+    main #phone{display: none;} 
+    main #print{display: block;} 
+    main #tablet{display: none;}
+
+    main h1{
+    padding: 10px;
+    color: black;   
+    text-align: center;
+    }
+}
+
+/* PARA TELAS DE CELULAR PORTRAIT */
+
+@media screen and (min-width:320px) and (max-width:575px) {
+    main{
+        width: 250px;
+        max-height: 300px;        
+        justify-items: center;
+    }
+    main h1{
+        font-size: 1.3em;
+        padding-bottom: 20px;
+    }    
+    main #pc{display: none;}
+    main #tv{display: none;} 
+    main #phone{display: block;} 
+    main #print{display: none;} 
+    main #tablet{display: none;} 
+}
+
+/* PARA TELAS DE CELULAR LANDESCAP  */
+
+@media screen and (min-width: 576px) and (max-width:767px) {
+    body{
+        background: url(imagens/back-phone.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+     main{
+        width: 300px;
+        max-height: 300px;        
+        justify-items: center;
+    }
+
+     main #pc{display: none;}
+     main #tv{display: none;} 
+     main #phone{display: block;} 
+     main #print{display: none;} 
+     main #tablet{display: none;}
+
+    main h1{
+        font-size: 1.5em;
+        padding-bottom: 30px;
+    }    
+}
+
+/* PARA TELAS DE TABLETS  */
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    body{
+        background: url(imagens/back-tablet.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    main{
+        width: 700px;
+        max-height: 300px;        
+       
+    }
+     main #pc{display: none;}
+     main #tv{display: none;} 
+     main #phone{display: none;} 
+     main #print{display: none;} 
+     main #tablet{display: block;}    
+}
+
+/* PARA TELAS DE LAPTOPS E DESKTOPS */
+
+@media screen and (min-width:1025px) and (max-width:1280px) {
+    body{
+        background: url(imagens/back-pc.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    main{
+        width: 700px;
+        max-height: 300px;        
+       
+    }
+     main #pc{display: block;}
+     main #tv{display: none;} 
+     main #phone{display: none;} 
+     main #print{display: none;} 
+     main #tablet{display: none;}    
+}
+
+/* PARA TELAS DE DESKTOPS GRANDES */
+
+@media screen and (min-width:1281px) {
+    body{
+        background: url(imagens/back-tv.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    main{
+        width: 700px;
+        max-height: 300px;        
+       
+    }
+     main #pc{display: none;}
+     main #tv{display: block;} 
+     main #phone{display: none;} 
+     main #print{display: none;} 
+     main #tablet{display: none;}    
+}
+
+
+
