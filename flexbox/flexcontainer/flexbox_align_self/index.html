@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{           
+            height: 400px;
+            display: flex;                  
+            flex-flow: row wrap;                             
+            background-color: lightsalmon;
+        }    
+        .itemA{
+            background-color: lightseagreen;
+            text-align: center;           
+            padding: 10px;            
+            border: 1px solid black;
+            align-self: stretch;                      
+        }
+        .itemB{
+            background-color: lightseagreen;
+            text-align: center;           
+            padding: 10px;            
+            border: 1px solid black;
+            align-self: center;                    
+        }
+        .itemC{
+            background-color: lightseagreen;
+            text-align: center;           
+            padding: 10px;            
+            border: 1px solid black;            
+            align-self: flex-end;                  
+        }
+        .itemD{
+            background-color: lightseagreen;
+            text-align: center;           
+            padding: 10px;            
+            border: 1px solid black;
+            align-self: flex-start;                       
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itemA">Acompanhamento de A</div> 
+        <div class="itemB">Acompanhamento de B</div> 
+        <div class="itemC">Acompanhamento de C</div>
+        <div class="itemD">Acompanhamento de D</div>          
+    </div>
+    
+</body>
+</html>
