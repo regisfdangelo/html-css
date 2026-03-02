@@ -9,30 +9,39 @@
             margin: 0;
             padding: 0;
         }
-        .container{           
+        .container{ 
+                      
             display: flex;                  
-            flex-flow: row wrap;                                     
+            flex-flow: row nowrap;                                     
             background-color: lightsalmon;
         }
-        .item{                       
+        .itemA{                                 
             background-color: lightseagreen;
-            text-align: center;
-            flex: auto;           
+            text-align: center;                    
             border: 1px solid black;
-            align-self: center;
-        }        
+            flex: 0 1 150px; /* -- grow - shrink - basis */  
+
+            
+        }
+        .itemB{                                 
+            background-color: lightseagreen;
+            text-align: center;                    
+            border: 1px solid black;
+            flex: 1 1 300px;  /* -- grow - shrink - basis */          
+        }
+        .itemC{                                 
+            background-color: lightseagreen;
+            text-align: center;                    
+            border: 1px solid black;
+            flex: 1 5 200px;   /* -- grow - shrink - basis */          
+        }               
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div> 
-        <div class="item">B</div> 
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">H</div>                      
+        <div class="itemA">A</div> 
+        <div class="itemB">B</div> 
+        <div class="itemC">C</div>                         
     </div>    
 </body>
 </html>
