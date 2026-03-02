@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box aula 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{ 
+                      
+            display: flex;                  
+            flex-flow: row nowrap;                                     
+            background-color: lightsalmon;
+        }
+        .item{  
+                                 
+            background-color: lightseagreen;
+            text-align: center;                    
+            border: 1px solid black;
+            flex-basis: 250px;
+            flex-grow: 1; /* -- o padrao e 0 nao podendo crescer o item, quanto maior o valor mais ele cresce. --*/
+            flex-shrink: 1; /* -- O padrao e 1 o item pode diminuir automaticamente, quanto maior o valor mais ele  vai diminuir.  -- */
+                     
+        }        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div> 
+        <div class="item">B</div> 
+        <div class="item">C</div>                         
+    </div>    
+</body>
+</html>
