@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box aula 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{ 
+                      
+            display: flex;                  
+            flex-flow: row nowrap;                                     
+            background-color: lightsalmon;
+        }
+        .itemA{                                 
+            background-color: lightseagreen;
+            text-align: center;                    
+            border: 1px solid black;
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+        .itemB{                                 
+            background-color: lightseagreen;
+            text-align: center;                    
+            border: 1px solid black;
+            flex-basis: 300px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .itemC{                                 
+            background-color: lightseagreen;
+            text-align: center;                    
+            border: 1px solid black;
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 5;            
+        }               
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itemA">A</div> 
+        <div class="itemB">B</div> 
+        <div class="itemC">C</div>                         
+    </div>    
+</body>
+</html>
